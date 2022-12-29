@@ -1,0 +1,35 @@
+input[type='checkbox']{
+    margin: 0 12px;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+}
+
+
+input[type="checkbox"]:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+
+  @apply bg-dark-primary border-[1px] border-primary-color-700
+}
+
+input[type="checkbox"]:checked:before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+
+  @apply bg-primary-color-700
+}
+
+input[type="checkbox"]:checked:after {
+    content: url('../assets/icon-check.svg');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}

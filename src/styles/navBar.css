@@ -1,0 +1,80 @@
+
+.nav-controls{
+
+    @apply 
+    flex 
+    items-center 
+    justify-end 
+    gap-5
+    w-full
+    mr-4
+    lg:flex-col
+    lg:h-full
+    lg:m-0
+    lg:my-10
+    lg:gap-10
+
+}
+
+.nav-icon{
+    @apply
+    text-slate-400
+    hover:text-primary-color-700
+    hover:cursor-pointer
+}
+
+.logo{
+    @apply  
+    relative 
+    flex-shrink-0
+    h-full lg:h-[103px]
+    w-[72px] 
+    md:w-[80px]
+    lg:w-full
+}
+
+
+
+.menu{
+    @apply 
+    lg:w-[103px]
+    flex
+    items-center
+    text-white
+    w-full 
+    h-[72px] md:h-[80px] lg:h-screen 
+    p-0
+    justify-between
+    bg-dark-tertiary
+    lg:justify-between lg:rounded-tr-3xl lg:rounded-br-3xl lg:flex-col
+}
+
+
+
+
+
+.avatar{
+    @apply
+    border-l-[1px]
+    lg:border-t-[1px]
+    lg:border-l-transparent
+    border-slate-600
+    p-3
+    flex
+    justify-center
+    items-center
+    h-full
+    lg:w-full
+    lg:basis-0
+    flex-shrink-0
+}
+
+.avatar img{
+    @apply 
+    rounded-full
+    w-8
+    mx-4
+    lg:my-5
+    lg:w-10
+}
+

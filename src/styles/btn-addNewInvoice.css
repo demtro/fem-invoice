@@ -1,0 +1,50 @@
+#addNewInvoice::before{
+
+    /* border-radius: 50%; */
+    
+    left: calc(50% - 1.2em);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 32px;
+    z-index: 2;
+}
+
+
+#addNewInvoice::before{
+    
+    @apply
+    content-['']
+    bg-light-primary
+    rounded-full
+    h-8
+
+
+}
+
+
+#addNewInvoice::after{
+
+    color: var(--light-primary);;
+    content: 'New';
+    left: calc(50% + 20px);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 0;
+    font-size: 12px;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    #addNewInvoice::before {
+        left: calc(50% - 50px);
+    }
+
+    #addNewInvoice::after {
+        content: 'New Invoice';
+        width: 100%;
+    }
+}

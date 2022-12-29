@@ -1,0 +1,66 @@
+
+
+    .invoice-card{
+        
+        grid-template-areas:
+            "id client"
+            "paymentDue iStatus"
+            "total iStatus";
+
+        @apply 
+        dark:bg-dark-secondary 
+        dark:text-light-primary
+        bg-light-primary
+        text-dark-secondary
+        rounded-lg 
+        mt-4
+        p-3
+        grid 
+        sm:flex
+        sm:justify-evenly
+        sm:items-center
+    }
+        
+
+
+    .invoice-id { 
+        grid-area: id;
+        justify-self: end;
+    }
+
+    .client { 
+        grid-area: client;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .payment-due { 
+        grid-area: paymentDue;
+    }
+
+    .total { 
+        grid-area: total; 
+    }
+
+    .iStatus { 
+        grid-area: iStatus; 
+        align-self: center;
+        justify-self: end;
+    }
+
+    
+    .draft{
+        @apply bg-status-bg-draft text-status-font-draft
+    }
+
+    .pending{
+        @apply bg-status-bg-pending text-status-font-pending
+    }
+
+    .paid{
+        @apply bg-status-bg-paid text-status-font-paid
+    }
+
+    .status{
+        @apply rounded-md  flex justify-center items-center h-10
+    }
